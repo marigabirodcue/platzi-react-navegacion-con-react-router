@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { CompleteIcon } from '../TodoIcon/CompleteIcon';
+import { EditIcon } from '../TodoIcon/EditIcon';
 import { DeleteIcon } from '../TodoIcon/DeleteIcon';
 import './TodoItem.css';
 import PropTypes from 'prop-types';
@@ -11,6 +12,7 @@ function TodoItem(props) {
         onComplete: PropTypes.any,
         onDelete: PropTypes.any,
         text: PropTypes.node,
+        onEdit: PropTypes.node,
     }
     return (
         <li className="TodoItem">
@@ -23,6 +25,9 @@ function TodoItem(props) {
             >
                 {props.text}
             </p>
+            <EditIcon
+                onEdit={props.onEdit}
+            />
             <DeleteIcon
                 onDelete={props.onDelete}
             />
