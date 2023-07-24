@@ -12,7 +12,7 @@ function TodoItem(props) {
         onComplete: PropTypes.any,
         onDelete: PropTypes.any,
         text: PropTypes.node,
-        onEdit: PropTypes.node,
+        onEdit: PropTypes.any,
     }
     return (
         <li className="TodoItem">
