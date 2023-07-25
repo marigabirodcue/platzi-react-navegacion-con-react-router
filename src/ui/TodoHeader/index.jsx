@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function TodoHeader({ children, loading }) {
     TodoHeader.propTypes = {
         children: PropTypes.node.isRequired,
-        loading: PropTypes.node.isRequired,
+        loading: PropTypes.any.isRequired,
     }
     return (
         <header>

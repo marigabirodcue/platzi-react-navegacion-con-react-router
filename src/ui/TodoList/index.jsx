@@ -9,7 +9,7 @@ function TodoList(props) {
         render: PropTypes.node,
         error: PropTypes.node.isRequired,
         onError: PropTypes.any.isRequired,
-        loading: PropTypes.node.isRequired,
+        loading: PropTypes.any.isRequired,
         onLoading: PropTypes.any.isRequired,
         totalTodos: PropTypes.node.isRequired,
         onEmptyTodos: PropTypes.any.isRequired,

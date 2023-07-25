@@ -7,7 +7,7 @@ function TodoCounter({ totalTodos, completedTodos, loading }) {
     TodoCounter.propTypes = {
         totalTodos: PropTypes.node.isRequired,
         completedTodos: PropTypes.node.isRequired,
-        loading: PropTypes.node,
+        loading: PropTypes.any,
     }
     return (
         <h2

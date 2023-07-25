@@ -7,7 +7,7 @@ function TodoSearch({ searchValue, setSearchValue, loading }) {
     TodoSearch.propTypes = {
         searchValue: PropTypes.node.isRequired,
         setSearchValue: PropTypes.any.isRequired,
-        loading: PropTypes.node,
+        loading: PropTypes.any,
     }
     const onSearchValueChange = (event) => {
         console.log(event.target.value);

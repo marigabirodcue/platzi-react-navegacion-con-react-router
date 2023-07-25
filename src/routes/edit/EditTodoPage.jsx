@@ -1,9 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import { TodoForm } from '../../ui/TodoForm';
 
 function EditTodoPage() {
     return (
-        <p>Editar TODO</p>
+        <TodoForm
+            label="Edita tu TODO"
+            submitText="Editar"
+            submitEvent={() => console.log('Llamar a editTodo')}
+        />
     );
 }
 

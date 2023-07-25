@@ -5,16 +5,13 @@ import PropTypes from 'prop-types';
 
 function CreateTodoButton(props) {
     CreateTodoButton.propTypes = {
-        setOpenModal: PropTypes.any.isRequired,
+        onClick: PropTypes.any.isRequired,
     }
-    const onClickButton = () => {
-        props.setOpenModal(prevState => !prevState);
-    };
 
     return (
         <button
             className="CreateTodoButton"
-            onClick={onClickButton}
+            onClick={props.onClick}
         >
             +
         </button>
