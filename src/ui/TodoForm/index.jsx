@@ -9,9 +9,10 @@ function TodoForm(props) {
         submitEvent: PropTypes.any.isRequired,
         label: PropTypes.any.isRequired,
         submitText: PropTypes.any.isRequired,
+        defaultTodoText: PropTypes.any.isRequired,
     }
     const navigate = useNavigate();
-    const [newTodoValue, setNewTodoValue] = React.useState('');
+    const [newTodoValue, setNewTodoValue] = React.useState(props.defaultTodoText || '');
 
     const onChange = (event) => {
         setNewTodoValue(event.target.value);
